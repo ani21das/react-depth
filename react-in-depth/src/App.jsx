@@ -1,16 +1,9 @@
-import React from "react";
-import Video from "./components/Video";
-import { Thumb, TitleThumb } from "./components/Thumb";
+import React from 'react'
+
 function App() {
   return (
-    <div>
-      <div>App</div>
-      <Video title="React" />
-      <Video title="Node" />
-      <Thumb resource="Youtube" />
-      <TitleThumb />
-    </div>
-  );
+    <div>App</div>
+  )
 }
 
-export default App;
+export default App
