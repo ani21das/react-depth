@@ -5,17 +5,28 @@ import Experience from './Experience';
 import resumeData from '../data';
 import Hobbies from './Hobbies';
 
-function Resume() {
+function Resume () {
+
+  const skillsLimit = 2;
+  const educationLimit = 1;
+  const experienceLimit = 2; 
+  const hobbiesLimit = 2; 
+  
   return (
     <div>
-      <h1 className="mb-2">{resumeData.name}'s Resume</h1>
+      <h1 className="mb-2">{ resumeData.name }'s Resume</h1>
       <div className="mb-4">
-        <p>Email: {resumeData.email}</p>
+        <p>Email: { resumeData.email }</p>
       </div>
-      <Skills skills={resumeData.skills} />
-      <Education education={resumeData.education} />
-      <Experience experience={ resumeData.experience } />
-      <Hobbies hobbies={resumeData.hobbies} />
+      
+      { resumeData.skills.length > 0 && <Skills skills={ resumeData.skills.slice(0,skillsLimit) } /> }
+
+      { resumeData.education.length > 0 && <Education education={ resumeData.education.slice(0,educationLimit) } /> }
+   
+      { resumeData.experience.length > 0 && <Experience experience={ resumeData.experience.slice(0,experienceLimit) } /> }
+
+      { resumeData.hobbies.length > 0 && <Hobbies hobbies={ resumeData.hobbies.slice(0,hobbiesLimit) } /> }
+
     </div>
   );
 }
