@@ -17,7 +17,7 @@ function App () {
           id={ video.id }
         >
           
-          <PlayButton onPlay={ () => console.log( 'play' ) } onPause={ () => console.log( 'pause' ) }>{ video.title}</PlayButton>
+          <PlayButton onPlay={ () => console.log( 'play',video.title ) } onPause={ () => console.log( 'pause',video.title ) }>{ video.title}</PlayButton>
         
         </Video>
       ) ) }
