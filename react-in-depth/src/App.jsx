@@ -16,15 +16,20 @@ function App () {
           verified={ video.verified }
           id={ video.id }
         >
-        { video.title }
+          
+          <PlayButton onPlay={ () => console.log( 'play' ) } onPause={ () => console.log( 'pause' ) }>{ video.title}</PlayButton>
+        
         </Video>
       ) ) }
 
       {/*Set the button position*/}
       <div style={{clear:'both'}}>
-      
-        <PlayButton message="Play-mgs">Play</PlayButton>
-        <PlayButton message="Pause-msg">Pause</PlayButton>
+{/*       
+        <PlayButton onPlay={ () => console.log( 'play' ) } onPause={()=>console.log('pause')}>Play</PlayButton>
+         */}
+        {/* <PlayButton onClick={()=>alert('Play it')}>Pause</PlayButton> */ }
+
+        
 
       </div>
     </div>
