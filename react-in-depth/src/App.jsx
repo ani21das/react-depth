@@ -1,6 +1,8 @@
 // src/App.js
 import React from 'react';
 import EventDemo from './components/EventDemo';
+import FormComponent from './components/FormComponent';
+import EnterKeyPress from './components/EnterKeyPress';
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
         <h1>Event Handling Example</h1>
       </header>
       <EventDemo />
+      <FormComponent />
+      <EnterKeyPress/>
     </div>
   );
 }
