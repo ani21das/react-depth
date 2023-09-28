@@ -2,6 +2,7 @@ import './App.css';
 import PlayButton from './components/PlayButton';
 import Video from './components/Video';
 import videos from './data/data';
+import Counter from './components/Counter';
 function App () {
   return (
     <div className='App'>
@@ -30,6 +31,7 @@ function App () {
         {/* <PlayButton onClick={()=>alert('Play it')}>Pause</PlayButton> */ }
 
         
+      <Counter/>
 
       </div>
     </div>
