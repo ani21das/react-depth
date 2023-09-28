@@ -1,8 +1,12 @@
 import React from 'react'
+import StopWatch from './components/StopWatch'
 
 function App() {
   return (
-    <div>App</div>
+    <>
+      <h1>Stop Watch</h1>
+      <StopWatch/>
+    </>
   )
 }
 
