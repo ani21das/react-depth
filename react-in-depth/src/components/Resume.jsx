@@ -11,6 +11,10 @@ function Resume () {
   const educationLimit = 1;
   const experienceLimit = 2; 
   const hobbiesLimit = 2; 
+
+  const handlePrint = () => {
+    window.print();
+  };
   
   return (
     <div>
@@ -25,7 +29,10 @@ function Resume () {
    
       { resumeData.experience.length > 0 && <Experience experience={ resumeData.experience.slice(0,experienceLimit) } /> }
 
-      { resumeData.hobbies.length > 0 && <Hobbies hobbies={ resumeData.hobbies.slice(0,hobbiesLimit) } /> }
+      { resumeData.hobbies.length > 0 && <Hobbies hobbies={ resumeData.hobbies.slice( 0, hobbiesLimit ) } /> }
+      
+      
+      <button onClick={handlePrint}>Print</button>
 
     </div>
   );
