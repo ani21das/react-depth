@@ -3,6 +3,7 @@ import React from 'react';
 import EventDemo from './components/EventDemo';
 import FormComponent from './components/FormComponent';
 import EnterKeyPress from './components/EnterKeyPress';
+import CloseTab from './components/CloseTab';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       </header>
       <EventDemo />
       <FormComponent />
-      <EnterKeyPress/>
+      <EnterKeyPress />
+      <CloseTab/>
     </div>
   );
 }
